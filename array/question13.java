@@ -1,3 +1,4 @@
+/*kadan's algorithm */
 public class question13 {
     public static void maxsubarraysum3(int arr[]){
         int currsum=0;
