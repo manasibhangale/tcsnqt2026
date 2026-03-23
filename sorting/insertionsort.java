@@ -34,6 +34,7 @@ public class insertionsort {
                 arr[prev+1]=arr[prev];
                 prev--;
             }
+            //if the prev becomes -1 then prev+1 makes it 0 and curr is stored at 0th position
             arr[prev+1]=curr;
         }
     }
