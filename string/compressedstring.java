@@ -1,5 +1,5 @@
 package string;
-
+//"aaabbbccd"==>a3b3c2d
 public class compressedstring {
     public static String compress(String s){
         StringBuilder sb=new StringBuilder("");//initiate an empty stringbuilder
