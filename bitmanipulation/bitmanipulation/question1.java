@@ -15,6 +15,9 @@ class question1 {
         String bin = "";
 
         while(number != 0){
+            /*Key operations:
+number & 1 → extracts last bit (0 or 1)
+number >> 1 → right shift (divide by 2) */
             bin = (number & 1) + bin;
             number = number >> 1;
         }
@@ -27,3 +30,10 @@ class question1 {
         System.out.print(requirednumber);
     }
 }
+/*
+| Step | number | number & 1 | bin   |
+| ---- | ------ | ---------- | ----- |
+| 1    | 5      | 1          | "1"   |
+| 2    | 2      | 0          | "01"  |
+| 3    | 1      | 1          | "101" |
+ */
