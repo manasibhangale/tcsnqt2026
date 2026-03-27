@@ -2,7 +2,7 @@ package recurssion;
 
 public class lastoccurence {
     public static int lastocc(int arr[],int i,int key){
-        if(i==arr.length-1){
+        if(i==arr.length){
             return -1;
         }
         int isfound=lastocc(arr,i+1,key);
