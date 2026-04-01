@@ -31,10 +31,10 @@ class mergesort{
             temp[k++]=arr[j++];
         }
         for(k=0;k<temp.length;k++){//copy elements from temp to original array
-            arr[k]=temp[k];
+            arr[si+k]=temp[k];//❤️
         }
     }
-    public static void printArr(int arr[]){
+    public static void printArr(int arr[]){//print the array
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }
@@ -42,7 +42,7 @@ class mergesort{
     }
     public static void main(String args[]){
         int arr[]={1,5,4,3,6,7,2,8};
-        merge_sort(arr,0,arr.length-1);
-        printArr(arr);
+        merge_sort(arr,0,arr.length-1);//call merge_sort function
+        printArr(arr);//print that sorted array as output
     }
 }
