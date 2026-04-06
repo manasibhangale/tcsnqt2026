@@ -10,9 +10,9 @@ class arraylist{
         System.out.println(list);
         int element=list.get(2);
         System.out.println(element);//O(1) TC
-        list.set(2,88);
+        list.set(2,88);//O(n)
         System.out.println(list);
-        list.remove(2);
+        list.remove(2);//O(n)
         System.out.println(list);
 
     }
