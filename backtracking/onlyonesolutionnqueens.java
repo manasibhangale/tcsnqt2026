@@ -1,4 +1,4 @@
-class nqueens{
+class onlyonesolutionnqueens{
     public static boolean is_valid(char[][]chessboard,int row,int col){
         //vertically top
         for(int i=row-1;i>=0;i--){
@@ -18,19 +18,22 @@ class nqueens{
         }
         return true;
     }
-    public static void check(char chessboard[][],int row){
+    public static boolean check(char chessboard[][],int row){//❤️convert return type to boolean
         if(row==chessboard.length){
             printboard(chessboard);
-            count++;
-            return;
+            
+            return true;//❤️return true
         }
         for(int j=0;j<chessboard.length;j++){
             if(is_valid(chessboard,row,j)){
                 chessboard[row][j]='Q';
-                check(chessboard,row+1);
+                if(check(chessboard,row+1)){//❤️ check if it is true here
+                    return true;//❤️
+                }
                 chessboard[row][j]='X';
             }
         }
+        return false;//❤️
     }
     public static void printboard(char chessboard[][]){
         System.out.println("-------------------------------");
@@ -42,8 +45,7 @@ class nqueens{
         }
         
     }
-    static int count=0;
-    public static void main(String args[]){
+        public static void main(String args[]){
         int n=5;
         char chessboard[][]=new char[n][n];
         for(int i=0;i<chessboard.length;i++){
@@ -51,7 +53,12 @@ class nqueens{
                 chessboard[i][j]='X';
             }
         }
-        check(chessboard, 0);
-        System.out.println("total number of ways:"+count);
+        
+        if(check(chessboard, 0)){
+            System.out.println("solution is possible");
+           
+        }else{
+            System.out.println("solution not possible");
+        }
     }
 }
