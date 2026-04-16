@@ -24,9 +24,38 @@ public class rotateleft {
         if(arr==null || arr.length==0)return ;
         int n=arr.length;
         d=d%n;
+        /*If d is larger than array size:
+        Example:
+        n = 7, d = 9
+        9 % 7 = 2
+        Rotating 9 steps = rotating 2 steps */
+        if (d == 0) return;//no rotation case
         reverse(arr,0,d-1);
         reverse(arr,d,n-1);
         reverse(arr,0,n-1);
+        /*
+        5. Core Logic (Reversal Algorithm)
+Step 1
+reverse(arr, 0, d - 1);
+
+👉 Reverse first d elements
+
+Example:
+
+[1,2,3,4,5,6,7], d=2
+→ [2,1,3,4,5,6,7]
+Step 2
+reverse(arr, d, n - 1);
+
+👉 Reverse remaining elements
+
+→ [2,1,7,6,5,4,3]
+Step 3
+reverse(arr, 0, n - 1);
+
+👉 Reverse whole array
+
+→ [3,4,5,6,7,1,2] */
 
     }
     public static void main(String args[]){
