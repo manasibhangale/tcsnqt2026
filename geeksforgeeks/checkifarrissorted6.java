@@ -1,3 +1,6 @@
+/*
+Given an array arr[] of size N, check whether the array is sorted in non-decreasing order or not.
+Return true if the array is sorted, otherwise return false. */
 package geeksforgeeks;
 
 public class checkifarrissorted6 {
