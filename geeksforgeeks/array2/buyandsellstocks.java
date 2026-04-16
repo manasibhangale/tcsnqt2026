@@ -9,7 +9,7 @@ public class buyandsellstocks {
                 int profit=arr[i]-buyingprice;
                 maxprofit=Math.max(maxprofit,profit);
             }else{
-                buyingprice=arr[i];
+                buyingprice=arr[i];//if buying price is more than the current price then update the buying price to current price because you should buy at lowest price
             }
         }
         return maxprofit;
