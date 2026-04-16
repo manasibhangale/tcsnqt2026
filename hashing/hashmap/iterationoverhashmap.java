@@ -11,7 +11,7 @@ public class iterationoverhashmap {
         System.out.println(hm);
         Set <String> keys=hm.keySet();
         System.out.println(keys);
-        for(String k:keys){
+        for(String k:keys){//foreach loop
             System.out.println("key= "+k+" value= "+hm.get(k));
         }
     }
