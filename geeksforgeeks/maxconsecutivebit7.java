@@ -1,3 +1,4 @@
+//count maximum consecutive bits
 package geeksforgeeks;
 public class maxconsecutivebit7 {
     public static int count(int arr[]){
