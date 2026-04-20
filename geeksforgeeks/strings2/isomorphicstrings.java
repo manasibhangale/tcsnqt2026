@@ -28,7 +28,7 @@ public class isomorphicstrings {
         return true;
     }
     public static void main(String args[]){
-        String str1="ccr";
+        String str1="car";
         String str2="rac";
         System.out.println(areisomorphic(str1, str2));
     }
