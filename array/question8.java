@@ -1,3 +1,4 @@
+//reverse an array
 public class question8 {
     public static void reversearr(int arr[]){
         int first=0,last=arr.length-1;
