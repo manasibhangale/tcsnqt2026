@@ -32,7 +32,7 @@ public class addinmiddle {
         node newnode=new node(data);
         node temp=head;
         int i=0;
-        while(i<idx-1){
+        while(i<idx-1){//helps find previous
             temp=temp.next;
             i++;
         }
